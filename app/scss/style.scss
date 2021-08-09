@@ -175,6 +175,40 @@
   }
 }
 
+.breadcrambs{
+  padding: 19px 0 15px;
+  background-color: #fbfbfb;
+  &__list{
+    display: flex;
+  }
+  &__list-item+.breadcrambs__list-item{
+    margin-left: 36px;
+  }
+  &__list-item{
+    color: #555759;
+    font-size: 15px;
+    line-height: 19px;
+    @extend %MuseoSC-300;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/arrow-left.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 6px;
+      height: 10px;
+      top: 50%;
+      right: -18px;
+      transform: translateY(-50%);
+    }
+    &:last-child{
+      &:after{
+        display: none;
+      }
+    }
+  }
+}
 
 
 @import 'media';
