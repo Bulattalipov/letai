@@ -210,5 +210,51 @@
   }
 }
 
+.top{
+  background-color: #202342;
+  min-height: 470px;
+  &__wrapper{
+    display: flex;
+    align-items: center;
+  }
+  &__content{
+    max-width: 380px;
+    margin-right: 120px;
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58px;
+    color: #fff;
+    margin-bottom: 34px;
+  }
+  &__subtitle{
+    font-size: 30px;
+    line-height: 36px;
+    @extend %MuseoSC-300;
+    color: #fff;
+    margin-bottom: 47px;
+  }
+  &__link{
+    width: 220px;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #FA4907;
+    padding: 15px 27px;
+    border-radius: 3px;
+    text-align: center;
+  }
+  &__img{
+    object-fit: cover;
+    background: linear-gradient(179.72deg, rgba(32, 35, 66, 0) 59.64%, #202342 99.75%),
+    linear-gradient(274.75deg, #202342 0%, rgba(32, 35, 66, 0) 25.11%),
+    linear-gradient(89.24deg, #202342 -0.02%, rgba(32, 35, 66, 0) 31.9%),
+    linear-gradient(180deg, #202342 0%, rgba(34, 37, 68, 0) 26.13%),
+    url(image.png);
+  }
+}
+
 
 @import 'media';
