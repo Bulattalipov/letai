@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -21,7 +22,7 @@
           <div class="header-top">
             <nav class="main">
               <ul class="main__list">
-                <li class="main__list-item">
+                <li class="main__list-item main__list-item--active">
                   <a class="main__list-link" href="#">
                     Частным клиентам
                   </a>
@@ -45,22 +46,33 @@
             </nav>
             <div class="header-top__info">
               <div class="header-top__info-item">
-                Поддержка
+                <a class="header-top__info-link" href="#">
+                  Поддержка
+                </a>
               </div>
               <div class="header-top__info-item">
-                Офисы продаж
+                <a class="header-top__info-link" href="#">
+                  Офисы продаж
+                </a>
               </div>
               <div class="header-top__info-item">
-                Оплата
+                <a class="header-top__info-link" href="#">
+                  Оплата
+                </a>
               </div>
               <div class="header-top__info-item">
-                Оплата
+                <a class="header-top__info-link" href="#">
+                  Казань
+                </a>
               </div>
               <div class="header-top__info-item">
-                Личный кабинет
+                <a class="header-top__info-link" href="#">
+                  Личный кабинет
+                </a>
               </div>
             </div>
           </div>
+          <div class="header__line"></div>
           <div class="header-bottom">
             <div class="header-bottom__wrapper">
               <nav class="header-bottom__menu">
@@ -94,9 +106,12 @@
               </nav>
               <div class="header-bottom__box">
                 <form class="header-bottom__form" action="">
-                  <button class="header-bottom__form-btn" type="submit"></button>
+                  <button class="header-bottom__form-btn" type="submit">
+                    <img src="images/icons/search.svg" alt="search icon">
+                  </button>
                   <input class="header-bottom__form-input" type="text" placeholder="Поиск">
                 </form>
+                <div class="header-bottom__line"></div>
                 <a class="header-bottom__link" href="#">
                   Стать абонентом
                 </a>
