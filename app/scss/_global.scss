@@ -3,10 +3,16 @@ body{
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  color: #2B2B2B;
 }
 
 .container{
   max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container-2{
+  max-width: 1450px;
   padding: 0 15px;
   margin: 0 auto;
 }
