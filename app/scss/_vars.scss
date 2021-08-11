@@ -17,3 +17,12 @@ $default: #2B2B2B;
   font-family: 'MuseoSansCyrl-900', sans-serif;
   font-weight: 900;
 }
+
+%checkbox-hidden,
+%radio-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}

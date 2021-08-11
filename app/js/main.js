@@ -26,6 +26,44 @@
     mySwiper.slideNext();
   });
 
+
+  const tabs = document.querySelectorAll('.services-invoices__tab'),
+    tabsParent = document.querySelector('.services-invoices__tabs'),
+    tabsContent = document.querySelectorAll('.services-invoices__content');
+
+  function hideTabContent() {
+    tabsContent.forEach(item => {
+      item.classList.add("hide");
+      item.classList.remove("show");
+    });
+
+    tabs.forEach(item => {
+      item.classList.remove('services-invoices__tab--active');
+    });
+  }
+
+  function showTabContent(i = 0) {
+    tabsContent[i].classList.add("show");
+    tabsContent[i].classList.remove("hide");
+    tabs[i].classList.add('services-invoices__tab--active');
+  }
+
+  hideTabContent();
+  showTabContent();
+
+  tabsParent.addEventListener("click", (event) => {
+    const target = event.target;
+
+    if (target && target.classList.contains('services-invoices__tab')) {
+      tabs.forEach((item, i) => {
+        if (target == item) {
+          hideTabContent();
+          showTabContent(i);
+        }
+      });
+    }
+  });
+
 $ (function (){
   
 });

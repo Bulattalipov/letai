@@ -337,6 +337,7 @@
     line-height: 26px;
     max-width: 210px;
     margin-bottom: 10px;
+    min-height: 52px;
   }
   &__subtitle{
     font-size: 12px;
@@ -463,5 +464,254 @@
 #swiperNext{
   
 }
+
+.services{
+  padding: 80px 0;
+  background-color: #F5F5F5;
+  &__items{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.services-item{
+  box-shadow: 0px 0.266004px 20px rgba(153, 152, 168, 0.17);
+  border-radius: 10px;
+  max-height: 334px;
+  background-color: #fff;
+  padding: 30px 40px;
+  &:nth-child(1) {
+    width: 740px;
+  }
+  &:nth-child(2) {
+    width: 520px;
+  }
+  &:nth-child(3) {
+    width: 520px;
+  }
+  &:nth-child(4) {
+    width: 740px;
+  }
+  &__title{
+    font-size: 26px;
+    line-height: 32px;
+    @extend %MuseoSC-500;
+    margin-bottom: 25px;
+  }
+}
+.services-invoices{
+  &__tabs{
+    display: flex;
+  }
+  &__tab{
+    margin-right: 30px;
+    font-size: 16px;
+    line-height: 23px;
+    @extend %MuseoSC-500;
+    padding-bottom: 15px;
+    cursor: pointer;
+  }
+  &__tab--active{
+    color: #F04E37;
+    border-bottom: 2px solid #FA4907;
+  }
+  &__line{
+    width: 100%;
+    height: 1px;
+    background-color: #F9FAFB;
+    margin-top: -1px;
+    margin-bottom: 28px;
+  }
+  &__form{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 32px;
+  }
+  &__form-box{
+    display: flex;
+    flex-direction: column;
+    &:nth-child(1){
+      width: 311px;
+    }
+    &:nth-child(2){
+      width: 126px;
+    }
+  }
+  &__form-span{
+    font-size: 12px;
+    line-height: 19px;
+    @extend %MuseoSC-300;
+    color: #A6A6A6;
+  }
+  &__form-input{
+    height: 54px;
+    padding: 14px 16px;
+    color: #A6A6A6;
+    margin-right: 14px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04),
+    0px 4px 16px rgba(51, 51, 51, 0.08);
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  &__form-btn{
+    border: none;
+    width: 189px;
+    height: 54px;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #FA4907;
+    padding: 15px 27px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.services-cabinet{
+  display: flex;
+  &__content{
+    width: 222px;
+  }
+  &__text{
+    max-width: 201px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 94px;
+  }
+  &__link{
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    padding-right: 43px;
+    color: $default;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url("../images/icons/arrowBig_right.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 29px;
+      height: 17px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+    }
+  }
+  &__box-img{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  &__img{
+    
+  }
+}
+
+.services-tran{
+  background-color: #FA4907;
+  &__title{
+    font-size: 26px;
+    line-height: 34px;
+    width: 387px;
+    margin-bottom: 43px;
+    color: #fff;
+    position: relative;
+    padding-left: 74px;
+    &:before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/logo-mini.svg');
+      width: 54px;
+      height: 61px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;  
+    }
+  }
+  &__form-row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 44px;
+  }
+  &__form-box{
+    margin-right: 10px;
+    &:nth-child(1){
+      width: 264px;
+      .services-tran__form-input {
+        width: 264px;
+      }
+    } 
+    &:nth-child(2) {
+      width: 188px;
+      .services-tran__form-input {
+        width: 188px;
+      }
+    }
+  }
+  &__form-span{
+    font-size: 12px;
+    line-height: 19px;
+    @extend %MuseoSC-300;
+    color: #fff;
+  }
+  &__form-input{
+    height: 54px;
+    padding: 14px 16px;
+    color: #A6A6A6;
+    margin-right: 14px;
+    margin-top: 5px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04),
+    0px 4px 16px rgba(51, 51, 51, 0.08);
+    border-radius: 4px;
+  }
+  &__form-btn{
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    padding: 15px 30px;
+    height: 54px;
+    border-radius: 3px;
+    width: 100%;
+    color: #fff;
+  }
+  &__label{
+    width: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  &__label-input{
+    @extend %checkbox-hidden;
+    &:checked+.services-tran__label-checkbox::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/check.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 18px;
+      height: 18px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__label-checkbox{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #D4D4D4;
+    border-radius: 4px;
+    position: relative;
+    margin-right: 12px;
+  }
+}
+
 
 @import 'media';
