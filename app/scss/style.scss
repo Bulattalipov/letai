@@ -263,11 +263,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items:center;
     margin-bottom: 50px;
-  }
-  &__title{
-    @extend %MuseoSC-500;
-    font-size: 38px;
   }
   &__link{
     @extend %MuseoSC-500;
@@ -710,6 +707,135 @@
     border-radius: 4px;
     position: relative;
     margin-right: 12px;
+  }
+}
+
+.cashback{
+  padding: 80px 0 40px;
+  &__title{
+    margin-bottom: 48px;
+  }
+  &__subtitle{
+    @extend %MuseoSC-300;
+    font-size: 16px;
+    color: #555759;
+    line-height: 26px;
+    margin-bottom: 46px;
+    max-width: 582px;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    flex: 1 1 100%;
+    box-shadow: 0px -2px 6px rgba(218, 218, 218, 0.25),
+    0px 2px 4px rgba(218, 218, 218, 0.25),
+    0px 4px 4px rgba(51, 51, 51, 0.04),
+    0px 4px 19px rgba(51, 51, 51, 0.1);
+    border-radius: 10px;
+    padding: 37px 32px;
+    position: relative;
+    min-height: 338px;
+    &:nth-child(1){
+      background-color: rgba(213, 221, 223, 0.25);
+      margin-right: 15px;
+      background-image: url('../images/cashback/cashback-img1.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      .cashback__item-text{
+        max-width: 470px;
+      }
+      &:hover{
+        background-color: none;
+        &:after{
+          content: '';
+          position: absolute;
+          background-image: url('../images/cashback/cashback-img3.png');
+          background-repeat: no-repeat;
+          width: 374px;
+          height: 311px;
+          top: 0;
+          right: 0;
+        }
+        .cashback__item-title{
+          max-width: 500px;
+        }
+        .cashback__item-text{
+          max-width: 380px;
+          line-height: 32px;
+        }
+      }
+    }
+    &:nth-child(2){
+      background-color: #FDDD64;
+      margin-left: 15px;
+      .cashback__item-text {
+        max-width: 270px;
+      }
+      &:hover{
+        background-color: none;
+        &:after {
+          content: '';
+          position: absolute;
+          background-image: url('../images/cashback/cashback-img4.png');
+          background-repeat: no-repeat;
+          width: 579px;
+          height: 377px;
+          top: 0;
+          right: 0;
+        }
+        .cashback__item-img {
+          display: none;
+        }
+      }
+    }
+    &:hover {
+      background: linear-gradient(99.54deg, #FA7007 3.54%, #FA4907 73.5%);
+      .cashback__item-title {
+        margin-bottom: 79px;
+      }
+      .cashback__item-title{
+        max-width: 500px;
+      }
+      .cashback__item-title,
+      .cashback__item-text{
+        position: relative;
+        z-index: 10;
+        color: #fff;
+      }
+      .cashback__item-link{
+        z-index: 10;
+        color: #fff;
+      }
+    }
+  }
+  &__item-title{
+    color: #FA4907;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 36px;
+    max-width: 254px;
+    margin-bottom: 36px;
+  }
+  &__item-text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #555759;
+  }
+  &__item-link{
+    position: absolute;
+    left: 32px;
+    bottom: 37px;
+    color: #FA4907;
+    text-decoration: underline;
+    font-size: 16px;
+  }
+  &__item-img{
+    position: absolute;
+    top: 0;
+    right: 30px;
   }
 }
 
