@@ -880,4 +880,86 @@
   }
 }
 
+.questions{
+  padding: 40px 0;
+  max-width: 1180px;
+  width: 100%;
+  &__title{
+    margin-bottom: 50px;
+  }
+  &__item-title{
+    padding: 20px 0 20px 42px;
+    border-top: 2px solid #F5F5F5;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/arrow-bottom.svg');
+      width: 12px;
+      height: 8px;
+      left: 6px;
+      top: 25px;
+    }
+  }
+  &__items{
+    margin-bottom: 23px;
+  }
+  &__item{
+    &:nth-child(1){
+      .questions__item-title{
+        border-top: none;
+      }
+    }
+    &:last-child{
+      border-bottom: 2px solid #F5F5F5;
+    }
+  }
+  &__item--active{
+    .questions__item-title{
+      &:before{
+        background-image: url('../images/icons/arrow-top.svg');
+      }
+    }
+    .questions__item-title{
+      color: #E84735;
+    }
+    .questions__item-content{
+      display: block;
+    }
+  }
+  &__item-title{
+    cursor: pointer;
+    font-size: 16px;
+  }
+  &__item-content{
+    margin: 10px 0 20px 42px;
+    display: none;
+  }
+  &__item-text{
+    margin-bottom: 12px;
+    @extend %MuseoSC-300;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  &__link{
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    padding-right: 16px;
+    color: $default;
+    &:after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/questions_arrowRight.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 8px;
+      height: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+    }
+  }
+}
+
 @import 'media';
