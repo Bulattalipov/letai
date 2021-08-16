@@ -71,7 +71,7 @@ $ (function (){
     $(this).parent().addClass('questions__item--active');
   });
 
-
+  
   $(".phone").mask("+7(999)999-99-99");
 
 });
